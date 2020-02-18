@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>Ordena tus donas online</title>
-    <style type="text/css">
-      body
-      {
-        background-color: grey;
-        font-family: sans-serif;
-      }
-    </style>
+    <meta charset='utf-8' />
+    <meta name='description' content='dibuja con canvas' />
+    <meta name='keywords' content='dibuja, lineas, canvas' />
+    <meta name='author' content='Ronald Mendoza' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+
+    <title>Canvas</title>
+
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
-    <h1>Online Delivery Donuts</h1>
-    <p>
-    Cuantas donas quieres?<br />
-    <input type="text" id="texto_lineas" />
-    <input type="button" value="Dale valor" id="boton" />
-    </p>
-    <canvas id="cuadrado" width="300" height="300"></canvas>
+
+    <header>
+      <h1>Dibuja en Canvas</h1>
+    </header>
+
+    <main class="bg">
+
+      <form action="" class="formulario">
+        <label for="lineas">Introduce el número de lineas:</label>
+        <input type="number" name="lineas" id="texto_lineas" autofocus> 
+        <input type="button" value="Dale valor" id="boton" />
+      </form> 
+
+      <div class="canvas">
+        <canvas id="cuadrado" width="300" height="300"></canvas>
+      </div>
+
+    </main>
     <script src="dibujo.js"></script>
   </body>
 </html>

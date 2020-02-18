@@ -43,5 +43,4 @@ function dibujarLinea (color, x_incial, y_inicial, x_final, y_final)
   lienzo.closePath();
 }
 
-math.ceil(3.78);
-math.floor(3.78);
+

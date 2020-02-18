@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset='utf-8' />
-    <meta name='description' content='dibuja con canvas' />
-    <meta name='keywords' content='dibuja, lineas, canvas' />
-    <meta name='author' content='Ronald Mendoza' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-
+    <meta charset="utf-8" />
+    <meta name="description" content="dibuja con canvas" />
+    <meta name="keywords" content="dibuja, lineas, canvas" />
+    <meta name="author" content="Ronald Mendoza" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Canvas</title>
-
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="border">
+      <header>
+        <h1>Dibuja en Canvas</h1>
+      </header>
 
-    <header>
-      <h1>Dibuja en Canvas</h1>
-    </header>
+      <hr />
 
-    <main class="bg">
+      <main class="bg">
+        <form action="" class="formulario">
+          <label for="lineas">Introduce el número de lineas entre 10 y 100:</label>
+          <input type="number" name="lineas" id="texto_lineas" min="10" max="100" placeholder="10" autofocus />
+          <input type="button" value="Dale valor" id="boton" />
+        </form>
 
-      <form action="" class="formulario">
-        <label for="lineas">Introduce el número de lineas:</label>
-        <input type="number" name="lineas" id="texto_lineas" autofocus> 
-        <input type="button" value="Dale valor" id="boton" />
-      </form> 
-
-      <div class="canvas">
         <canvas id="cuadrado" width="300" height="300"></canvas>
-      </div>
+      </main>
 
-    </main>
+      <hr />
+
+      <footer>Derechos Reservados 2020</footer>
+    </div>
     <script src="dibujo.js"></script>
   </body>
 </html>
